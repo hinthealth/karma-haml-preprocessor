@@ -28,7 +28,7 @@ createHamlCoffeePreprocessor.$inject = ['args', 'config', 'logger', 'helper'];
 
 // PUBLISH DI MODULE
 module.exports = {
-  'preprocessor:haml': ['factory', createHamlPreprocessor]
+  'preprocessor:haml': ['factory', createHamlPreprocessor],
   'preprocessor:haml-coffee': ['factory', createHamlCoffeePreprocessor]
 };
 
