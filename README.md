@@ -27,8 +27,10 @@ module.exports = function(config) {
       '*.haml'
     ],
     preprocessors: {
-      'app/assets/javascripts/**/*.haml'   : 'haml'
+      'app/assets/javascripts/**/*.haml'   : 'haml' // or 'haml-coffee'
     }
   });
 };
 ```
+
+The preprocessor renames the file path from .haml to .html in case later preprocessors expect .html files.
