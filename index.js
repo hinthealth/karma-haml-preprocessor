@@ -7,7 +7,7 @@ var createHamlPreprocessor = function(args, config, logger, helper) {
   return function(content, file, done) {
     log.debug('Processing "%s".', file.originalPath);
     file.path = file.path.replace('.haml', '.html');
-    done(haml.compile(content)
+    done(haml.compile(content));
   };
 };
 
@@ -19,7 +19,7 @@ var createHamlCoffeePreprocessor = function(args, config, logger, helper) {
   return function(content, file, done) {
     log.debug('Processing "%s".', file.originalPath);
     file.path = file.path.replace('.haml', '.html');
-    done(hamlc.compile(content)())
+    done(hamlc.compile(content)());
   };
 };
 
